@@ -1,0 +1,27 @@
+package com.grwts.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.grwts.vo.PropertiesVo;
+
+@RestController
+public class PropertiesController {
+	@Autowired
+	private PropertiesVo propertiesVo1;
+ @GetMapping(path = "/properties")
+ public PropertiesVo display()
+ {
+	 PropertiesVo propertiesVo=new  PropertiesVo("1A", "Zafar Imam", "New Delhi");
+	 return propertiesVo;
+			 
+ }
+ @GetMapping(path = "/properties1")
+ public PropertiesVo display1()
+ {
+	
+	 return propertiesVo1;
+			 
+ }
+}

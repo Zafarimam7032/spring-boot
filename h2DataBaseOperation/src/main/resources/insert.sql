@@ -1,0 +1,1 @@
+insert into STUDENT_VO values(1,"zafar imam","new Delhi","java devloper"); 
